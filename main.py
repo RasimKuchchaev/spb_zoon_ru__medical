@@ -1,5 +1,4 @@
 import random
-
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -136,8 +135,8 @@ def get_data(file_path):
 
 
 def main():
-    # get_source_html(url="https://spb.zoon.ru/medical/type/detskaya_poliklinika/")
-    # get_items_url(file_path="C:\PythonCode\spb_zoon_ru__medical\source_page.html")
+    get_source_html(url="https://spb.zoon.ru/medical/type/detskaya_poliklinika/")
+    get_items_url(file_path="C:\PythonCode\spb_zoon_ru__medical\source_page.html")
     get_data("C:\PythonCode\spb_zoon_ru__medical\items_urls.txt")
 
 if __name__ == "__main__":
